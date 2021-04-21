@@ -7,9 +7,9 @@ export default [
   {
     input: 'src/index.ts',
     output: {
-      file: 'dist/mplogd.dev.js',
+      file: 'dist/analysis_middleware.dev.js',
       format: 'umd',
-      name: 'Mplogd'
+      name: 'AnalysisMiddleware'
     },
     plugins: [
       typescript(),
@@ -25,9 +25,9 @@ export default [
   {
     input: 'src/index.ts',
     output: {
-      file: 'dist/mplogd.js',
+      file: 'dist/analysis_middleware.js',
       format: 'umd',
-      name: 'Mplogd'
+      name: 'AnalysisMiddleware'
     },
     plugins: [
       typescript(),
@@ -41,11 +41,11 @@ export default [
     ],
   },
   {
-    input: 'dist/mplogd.js',
+    input: 'dist/analysis_middleware.js',
     output: {
-      file: 'dist/mplogd.min.js',
+      file: 'dist/analysis_middleware.min.js',
       format: 'umd',
-      name: 'Mplogd'
+      name: 'AnalysisMiddleware'
     },
     plugins: [
       uglify(),
